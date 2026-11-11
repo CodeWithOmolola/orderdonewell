@@ -13,9 +13,15 @@
 <header><a class="logo" href="index.html" aria-label="Order Donewell home">Order<br>Donewell</a><nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="approach.html">Approach</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav></header>
 <main>
 <div class="ct pad">
-<div class="l"><h2>What are you building?</h2><p>Share a few lines about the problem or idea and the conversation starts there.</p></div>
-<div class="reach"><a class="btn" href="mailto:info@orderdonewell.com">info@orderdonewell.com</a></div>
+<div class="l"><h2>What are you building?</h2><p class="swap" aria-hidden="true"><span id="w">A strategy.</span></p> <a class="btn" id="go" href="mailto:info@orderdonewell.com">info@orderdonewell.com</a></div>
 </div>
+<div class="band" aria-hidden="true"><div class="track"><span>Order, done well.</span><span>Order, done well.</span><span>Order, done well.</span><span>Order, done well.</span><span>Order, done well.</span><span>Order, done well.</span><span>Order, done well.</span><span>Order, done well.</span></div></div>
+<script>
+(function(){
+var words=["A strategy.","A system.","A product.","A plan.","A better process."],i=0,w=document.getElementById("w");
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){setInterval(function(){w.classList.add("out");setTimeout(function(){i=(i+1)%words.length;w.textContent=words[i];w.classList.remove("out")},450)},2400)}
+})();
+</script>
 </main>
 <footer><a class="logo" href="index.html">Order<br>Donewell</a><small>&copy; 2026 Order Donewell</small></footer>
 </body>
