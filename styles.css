@@ -56,14 +56,7 @@ nav a[aria-current="page"]{opacity:1;text-decoration:underline;text-underline-of
 .ct .l{display:grid;gap:1.5rem;align-content:start}
 .ct h2{font-size:clamp(3rem,8vw,7rem);letter-spacing:-.05em}
 .ct .l p{max-width:30ch;opacity:.8}
-.ct .btn{justify-self:start;width:100%;max-width:18rem;text-align:center}
-.reach{background:var(--mist);border-radius:36px;padding:clamp(1.75rem,4vw,3rem);box-shadow:14px 14px 30px var(--sh1),-14px -14px 30px #fff;display:grid;gap:1.5rem;justify-items:start}
-.reach .btn{word-break:break-word}
-.chips{display:flex;flex-wrap:wrap;gap:.7rem}
-.chip{font:inherit;border:0;cursor:pointer;color:var(--ink);background:var(--mist);border-radius:999px;padding:.7rem 1.1rem;box-shadow:5px 5px 10px var(--sh1),-5px -5px 10px #fff;transition:background .25s,color .25s,box-shadow .25s,transform .25s}
-.chip:hover{transform:translateY(-2px)}
-.chip[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:inset 3px 3px 6px rgba(0,0,0,.35)}
-.cp{font:inherit;background:none;border:0;color:var(--ink);text-decoration:underline;text-underline-offset:.25em;cursor:pointer;opacity:.7;padding:0}
+.ct .btn{justify-self:start;width:100%;max-width:22rem;text-align:center;word-break:break-word}
 .swap{font-size:clamp(2rem,5vw,4.5rem)!important;font-weight:200;letter-spacing:-.04em;line-height:1.1;opacity:.55!important;max-width:none!important;overflow:hidden;min-height:1.2em}
 .swap span{display:inline-block;transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .45s}
 .swap span.out{transform:translateY(100%);opacity:0}
@@ -71,7 +64,7 @@ nav a[aria-current="page"]{opacity:1;text-decoration:underline;text-underline-of
 .track{display:flex;width:max-content;animation:slide 30s linear infinite}
 .track span{font-size:clamp(3rem,9vw,8rem);font-weight:300;letter-spacing:-.05em;white-space:nowrap;padding-right:3rem;line-height:1.1}
 @keyframes slide{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.track{animation:none}.swap span,.chip{transition:none}}
+@media (prefers-reduced-motion:reduce){.track{animation:none}.swap span{transition:none}}
 footer{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;padding:2.5rem clamp(1.25rem,4vw,3.5rem) 2rem}
 footer .logo{font-size:1.6rem}
 footer small{font-size:.9rem;opacity:.7}
